@@ -63,16 +63,27 @@ footer{
     text-align: center;
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    margin: 20px 0px;
 }
+
 
 footer ul li p{
     width: 60vw;
     margin-bottom: 10px;
+    margin:auto;
+    font-weight: bold;
 }
 
 footer ul li{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .copy{
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 footer ul li div i{
@@ -82,28 +93,28 @@ footer ul li div i{
 }
 
 
-main .productos{
+main div .productos{
     margin:10px 0px;
     display: flex;
     flex-direction: column;
 }
 
-main article .icono-carro{
+main div article .icono-carro{
     width: 40px;
     height: 40px;
     border: 1px solid #39b54a;
     border-radius: 50%;
     display: flex;
-    padding: 6px;
+    justify-content: center;
+    align-items: center;
 }
 
-main article .icono-carro i{
+main div article .icono-carro i{
     color: #39b54a;
     font-size: 1.3em;
-    
 }
 
-main article .productos-descripcion{
+main div article .productos-descripcion{
     display: flex;
     border-top: 1px solid #ebebeb;
     background-color: #fff;
@@ -112,19 +123,75 @@ main article .productos-descripcion{
     flex-direction: column;
 }
 
-main article .productos-descripcion .descuento {
+main div article .productos-descripcion .descuento {
     font-size: 16px;
     color: #39b54a;
 }
 
-main article .productos-descripcion .precio{
+main div article .productos-descripcion .precio{
     font-size: 18px;
 }
 
-main article .productos-descripcion .descripciones{
+main div article .productos-descripcion .descripciones{
     font-size: 16px;
     padding-top: 25px;
 }
+.register{
+    margin: auto;
+}
+
+.register .title-register{
+    margin-bottom: 20px;
+}
+
+.register form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10vh auto;
+    background-color: #fff;
+    border-radius: 4%;
+}
+
+.register form label{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 50vw;
+}
+.register form label input{
+    margin: 7px;
+}
+
+.register form .button-send-reset button{
+    margin: 10px 15px;
+}
+
+.register form .button-send button{
+    margin: 10px 15px;
+}
+
+.login{
+    margin: auto;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10vh auto;
+    background-color: #fff;
+    border-radius: 4%;
+}
+
+.login form label{
+    margin:15px 0px;
+    text-align: center;
+}
+
 
 /*resolucion menor*/
 @media screen and (max-width: 480px){
@@ -141,8 +208,84 @@ header nav .burger-menu{
     display: none;
 }
 
-main .productos{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+header .banner img {
+    width: 100%;
+    height: 35vh;
 }
 
+main .productos div .descripciones{
+    display: none;
+}
+
+main .productos:hover div .descripciones{
+    display: block;
+}
+
+main div article .icono-carro:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+
+
+main div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+main div article{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 5px;
+}
+
+main div article img{
+    width: 100%;
+}
+
+.login form button:hover {
+    background-color: #0022AA;
+}
+
+footer {
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    flex-direction: row;
+}
+footer ul li p{
+    width: 25vw;
+    font-weight: bold;
+}
+
+footer ul li:hover div i{
+    color: #EAC926;
+}
+
+footer .copy{
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* header nav ul {
+    display: flex;
+    width: 30vw;
+    flex-direction: row;
+    justify-content: space-around;
+} */
 }
