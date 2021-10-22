@@ -239,6 +239,11 @@ main div article{
     flex-direction: column;
     width: 20vw;
     padding: 5px;
+    
+}
+
+main div article:hover{
+    box-shadow: 2px 1px 18px -1px rgba(0,0,0,0.3);
 }
 
 main div article img{
