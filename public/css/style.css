@@ -260,7 +260,7 @@ footer ul{
 }
 
 footer ul li{
-    flex-direction: row;
+    flex-direction: column;
 }
 footer ul li p{
     width: 25vw;
@@ -276,11 +276,11 @@ footer .copy{
     font-weight: bold;
 }
 
-header nav{
+/* header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */
 
 /* header nav ul {
     display: flex;
